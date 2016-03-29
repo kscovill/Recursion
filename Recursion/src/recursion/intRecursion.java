@@ -6,11 +6,18 @@ public class intRecursion {
 	static String j;
 	static int num;
 	static int count = 0;
+	
+	// This will constantly take the number entered and divide it by 2 which will tell you the closest value of 2 to whatever
+	// number it is divided.
+	
 	public static void intRecursion() {
 		while(true){
 			boolean yes = true;
 			try{
 				j = JOptionPane.showInputDialog(null, "Please enter a number.");
+				if (j == null) {
+					  System.exit(0);
+					}
 				num = Integer.parseInt(j);
 			}catch(NumberFormatException e){
 				System.out.println("ERROR: PLEASE ENTER A NUMBER");

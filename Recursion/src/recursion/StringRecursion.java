@@ -5,8 +5,13 @@ import javax.swing.JOptionPane;
 public class StringRecursion {
 	static int count = -1;
 	
+	// This takes the string entered and puts it in to an array and prints it out character by character recursively.
+	
 	public static void StringRecursion() {
-		String string = JOptionPane.showInputDialog(null, "Enter a String (one word)");
+		String string = JOptionPane.showInputDialog(null, "Enter anything!");
+		if (string == null) {
+			  System.exit(0);
+			}
 		char[] stringer = string.toCharArray();
 		System.out.println("Your final String is:\n");
 		
